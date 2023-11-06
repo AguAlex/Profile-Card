@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800;900&family=Victor+Mono:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(45deg, rgb(222, 209, 209), rgb(247, 106, 106), rgb(124, 81, 81), rgb(120, 109, 109));
+    justify-content: center;
+    align-items: center;
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+}
+
+.card{
+    max-width: 400px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.profile_pic{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+    
+}
+
+.image{
+   background-color: #8a2be2;
+   height: 150px;
+   width: 150px;
+   padding:3px;
+   position: relative;
+   border-radius: 50%; 
+   margin-bottom: 5px;
+
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.media{
+    display: flex;
+    margin-top: 7px;
+}
+
+.iconita{
+    background-color: rgb(203, 72, 72);
+    margin: 0 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: 10px;
+    transition: all 0.5s ease 0s;
+
+}
+
+.iconita:hover{
+    background-color: rgb(108, 118, 16);
+    transform: translate(-7px);
+}
+
+.card::before{
+    background-color: #474526;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    content: '';
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+}
+
+.education{
+    margin-top: 10px;
+}
+
+.education_button{
+    font-size: 20px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease 0s;
+}
+
+.education_button:hover{
+    background-color: rgb(108, 118, 16);
+    color: #fff;
+    transform: translate(-7px);
+    cursor: pointer;
+}
+
+
+
+
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
